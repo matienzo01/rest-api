@@ -63,6 +63,11 @@ public class SearchRequest {
             return NodeMatcher.type(nodeType);
         }
 
+        String group = ctx.queryParam("group");
+        if (group != null && !group.isEmpty()) {
+            return NodeMatcher.key("group." + group);
+        }
+
         throw new IllegalArgumentException("No query parameter defined");
     }
 
