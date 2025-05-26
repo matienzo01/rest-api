@@ -1,6 +1,4 @@
-# luckperms-rest-api
-
-![](https://img.shields.io/badge/status-beta-important?style=for-the-badge)
+# LuckPerms REST API
 
 A REST API for LuckPerms.
 
